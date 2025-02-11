@@ -1,0 +1,8 @@
+﻿  FitnessFunctions.cpp
+  Tema1(2).cpp
+  Tema1.cpp
+D:\Masters\1st_year\nim\[NIM]_Vlad_Adriana_Lupu_Andreea-Daniela_H1_H1'\Tema1 - Copy\Tema1\Tema1.cpp(480,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ThreadPool.cpp
+  utils.cpp
+  Generating Code...
+  Tema1.vcxproj -> D:\Masters\1st_year\nim\[NIM]_Vlad_Adriana_Lupu_Andreea-Daniela_H1_H1'\Tema1 - Copy\x64\Debug\Tema1.exe

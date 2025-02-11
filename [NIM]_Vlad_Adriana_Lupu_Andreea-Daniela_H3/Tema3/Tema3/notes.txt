@@ -1,0 +1,20 @@
+ga:
+starting pm 0.05 am testat si 0.025 si 0.005 si 0.1 si 0.075 si uneori dadeau rezultate mai bune, dar in medie 0.05 pare sa fie mai bun pentru majoritatea
+0.1 si 0.02 merge mai bine la rat99
+adjust pm: itr /= 10 in general. la popsize mare /= 5. cred ca mai sunt si teste cu alte valori dar sincer nu mai tin minte
+	- 2 * itr general, -3 * itr la rat99 (la finalul functiei gen)
+m 2 si 3 par sa mearga mai bine pe popsize mai mare
+m 5 si 7 merg bine oricum sincer, sunt mai permisive
+crossover luat din articol dar acolo era altfel reprezentarea (chromosomes) deci am adaptat
+hc pare sa ajute mai mult la rat99 si mai putin la restul
+popsize mai mare -> mai consistent, converge in mai putine generatii, dar dureaza mai mult overall fara mari beneficii la m5 si 7, merita doar la m2 si 3
+starting pm = 0.1 e limita superioara. peste ea deja incurca prea mult puterea de convergere a celorlalte elemente. converge si la 0.1 dar inceet (si spre final deloc)
+starting pm = 0.001 pare sa fie limita inferioara la care inca se vede un efect. mai mic si nu prea pare ca face ceva mutatia.
+
+aco: 
+pt eil51 si berlin52: ga si o2 aplicate la fiecare iter. ga aplicat doar o data (nu era in loop. nici nu avea turneu si elitism, dadeam raw process_population_chunk pe tot o data fara restul chestiilor care tin de ga)
+pt eil76 si rat99: ga si o2 aplicate o data la 5 iter. ga aplicat de 50 de ori (except la eil76 cu 7 salesmen, inca nu schimbasem)
+
+both: 
+eil 76 m 3: best e mai bun decat orice rezultat pe care l-am gasit online !! yay 196.7 -> 195.7
+in rest orice pare mai bun posibil sa fie din cauza aproximarilor (cu doar o zecimala de ex) facute in articolele gasite. deci da, am cu 0.01 mai bun, dar nu stiu daca se pune
